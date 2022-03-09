@@ -1,0 +1,124 @@
+.about__achievements {
+    margin-top: 3rem;
+}
+
+.about__achievements-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+
+.about__achievements-right > p {
+    margin: 1.6rem 0 2.5rem;
+}
+
+.achievement__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.achievement__card {
+    background: var(--color-bg-light1);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.achievement__card:hover {
+    background: var(--color-bg-light2);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.achievement__card:nth-child(1) .achievement__icon {
+    background-color: #7F7474;
+}
+
+.achievement__card:nth-child(2) .achievement__icon {
+    background-color: var(--color-warning);
+}
+
+.achievement__card:nth-child(3) .achievement__icon {
+    background-color: #007DBC;
+}
+
+.achievement__icon {
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.achievement__card p {
+    margin-top: 1rem;
+}
+
+/* case study */
+.study {
+    background: var(--color-bg-light1);
+    box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);
+}
+
+.study__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.study__content {
+    background: var(--color-bg-light2);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.study__content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.redirect {
+    text-decoration: underline;
+    color: var(--color-secondary);
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+    .about__achievements {
+        margin-top: 2rem;
+    }
+
+    .about__achievements-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .about__achievements-left {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .study__container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* phones */
+@media screen and (max-width: 600px) {
+    .achievement__cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .study__container {
+        grid-template-columns: 1fr;
+        gap: 0.7rem;
+    }
+
+    
+
+}
