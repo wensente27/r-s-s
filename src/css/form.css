@@ -1,0 +1,94 @@
+.form {
+    margin-top: 3rem;
+    height: 70vh;
+}
+
+.form__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+
+.form__container-right > p {
+    margin: 1.6rem 0 2.5rem;
+}
+
+.form__btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.btn {
+    cursor: pointer;
+    width: 90%;
+    background: #0f2210;
+    font-family: 'Recoleta';
+    text-align: center;
+    border: 1px solid var(--color-primary)
+}
+
+.fa-brands, .fa-solid {
+    background: var(--color-bg-light2);
+    font-size: 20px;
+    margin-bottom: 1rem;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20%;
+}
+
+@media screen and (max-width: 1024px) {
+    .form {
+        margin-top: 2rem;
+        height: 100vh;
+    }
+
+    .form__container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .form__container-left {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .form__container-right {
+        margin: 0 auto;
+    }
+
+    .form__container-right > h1 {
+        font-size: 2.4rem;
+    }
+
+    .form__container-right > p {
+        font-size: 1.2rem;
+    }
+
+    .form__btns {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form {
+        height: 110vh;
+    }
+
+    .form__btns {
+        gap: 1rem;
+    }
+
+    .btn {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+}
