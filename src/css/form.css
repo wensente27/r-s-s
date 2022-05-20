@@ -9,8 +9,8 @@
 }
 
 .header__left-subtext {
-    font-size: 0.8rem;
-    color: var(--color-secondary);
+    font-size: 1rem;
+    color: var(--color-white);
 }
 
 .header__left-subtext:hover {
